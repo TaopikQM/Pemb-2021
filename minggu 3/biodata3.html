@@ -208,9 +208,6 @@ th {
      </tbody>
 
      </table>
-</div>
-</body>
-
 
 <br><br><br><br>
 
@@ -224,7 +221,41 @@ th {
     <img src="https://www.gabrielerapino.com/it/files/2018/11/youtube-logo.png" width="50">
     </a>
 
+<div id="YouTube Video" class="tabcontent">
+  <h3>YouTube Video</h3>
+  <p>Rekomendasi Video YouTube</p>
+  <iframe width="560" height="315" 
+  src="https://www.youtube.com/embed/49l4W2uuroo" 
+  title="YouTube video player" frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+  </iframe>
+<a  
+<iframe width="560" height="315" 
+src="https://www.youtube.com/embed/uHD1NSH3Yso" 
+title="YouTube video player" frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+</a>
+
+</div>
+</font>
+<script>
+function openContents(evt, Name) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(Name).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
 
 
-
+</div>
+</body>
 </html>
